@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f7a9c4b-59de-4e79-8320-10e9b5b2e80a" name="Changes" comment="LABA1NewsApp">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/news.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/news.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "IAlehkaI"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/IAlehkaI/WEBLABA1",
+    "accountId": "5d6b0ab7-599b-41c6-961c-8e95ed68443b"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -67,6 +80,7 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="ервый коммит: структура проекта и начальные файлы" />
     <MESSAGE value="LABA1NewsApp" />
     <option name="LAST_COMMIT_MESSAGE" value="LABA1NewsApp" />
   </component>

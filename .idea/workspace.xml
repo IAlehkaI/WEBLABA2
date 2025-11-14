@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f7a9c4b-59de-4e79-8320-10e9b5b2e80a" name="Changes" comment="LABA1NewsApp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/news.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/news.json" afterDir="false" />
+    <list default="true" id="1f7a9c4b-59de-4e79-8320-10e9b5b2e80a" name="Changes" comment="LABA1NewsApp и отчет">
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,12 +75,29 @@
       <option name="project" value="LOCAL" />
       <updated>1763065133735</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="LABA1NewsApp">
+      <option name="closed" value="true" />
+      <created>1763115522791</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763115522791</updated>
+    </task>
+    <task id="LOCAL-00003" summary="LABA1NewsApp и отчет">
+      <option name="closed" value="true" />
+      <created>1763115567283</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763115567283</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ервый коммит: структура проекта и начальные файлы" />
     <MESSAGE value="LABA1NewsApp" />
-    <option name="LAST_COMMIT_MESSAGE" value="LABA1NewsApp" />
+    <MESSAGE value="LABA1NewsApp и отчет" />
+    <option name="LAST_COMMIT_MESSAGE" value="LABA1NewsApp и отчет" />
   </component>
 </project>

@@ -4,6 +4,44 @@ from fastapi.templating import Jinja2Templates
 from domain.models import News
 from application.services import NewsService
 from infrastructure.repository import InMemoryNewsRepository
+from infrastructure.database import SessionLocal
+from fastapi.security import OAuth2PasswordBearer
+from fastapi import Depends, HTTPException
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
+async def get_current_user(token: str = Depends(oauth2_scheme)):
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username != "admin":
+            raise HTTPException(status_code=401, detail="Invalid credentials")
+    except JWTError:
+        raise HTTPException(status_code=401, detail="Invalid token")
+    return username
+
+# Пример защищённого маршрута
+@router.post("/api/news")
+async def api_create(
+    news: News,
+    current_user: str = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    repo = PostgreSQLNewsRepository(db)
+    service = NewsService(repo)
+    return service.create_news(news)
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@router.get("/", response_class=HTMLResponse)
+async def home(request: Request, q: str = "", db: Session = Depends(get_db)):
+    repo = PostgreSQLNewsRepository(db)
+    service = NewsService(repo)
 
 repo = InMemoryNewsRepository(max_size=50)
 service = NewsService(repo)
